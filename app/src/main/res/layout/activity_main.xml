@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/class2.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="classes2.1"
+            android:tag="top.gtf35.iotgameproject.classes_2.class_2_1.Class_2_1"
+            android:onClick="jumpActivity"/>
+
+        <Button
+            android:id="@+id/class2.2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="classes2.2"
+            android:tag="top.gtf35.iotgameproject.classes_2.class_2_2.Class_2_2"
+            android:onClick="jumpActivity"/>
+
+        <Button
+            android:id="@+id/class2.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="classes2.3"
+            android:tag="top.gtf35.iotgameproject.classes_2.class_2_3.Class_2_3"
+            android:onClick="jumpActivity"/>
+
+        <Button
+            android:id="@+id/class2.4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="classes2.4"
+            android:tag="top.gtf35.iotgameproject.classes_2.class_2_4.Class_2_4"
+            android:onClick="jumpActivity"/>
+
+        <Button
+            android:id="@+id/class2.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="classes2.5"
+            android:tag="top.gtf35.iotgameproject.classes_2.class_2_5.Class_2_5"
+            android:onClick="jumpActivity"/>
+
+        <Button
+            android:id="@+id/class2.6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="classes2.6"
+            android:tag="top.gtf35.iotgameproject.classes_2.class_2_6.Class_2_6"
+            android:onClick="jumpActivity"/>
+
+        <Button
+            android:id="@+id/class2.7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="classes2.7"
+            android:tag="top.gtf35.iotgameproject.classes_2.class_2_7.Class_2_7"
+            android:onClick="jumpActivity"/>
+
+        <Button
+            android:id="@+id/class3.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="classes3.1"
+            android:tag="top.gtf35.iotgameproject.classes_3.class_3_1.Class_3_1"
+            android:onClick="jumpActivity"/>
+
+        <Button
+            android:id="@+id/class3.2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="classes3.2"
+            android:tag="top.gtf35.iotgameproject.classes_3.class_3_2.Class_3_2"
+            android:onClick="jumpActivity"/>
+
+        <Button
+            android:id="@+id/class3.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="classes3.3"
+            android:tag="top.gtf35.iotgameproject.classes_3.class_3_3.Class_3_3"
+            android:onClick="jumpActivity"/>
+
+        <Button
+            android:id="@+id/class4.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="classes4.1"
+            android:tag="top.gtf35.iotgameproject.classes_4.class_4_1.Class_4_1"
+            android:onClick="jumpActivity"/>
+
+        <Button
+            android:id="@+id/class4.2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="classes4.2"
+            android:tag="top.gtf35.iotgameproject.classes_4.class_4_2.Class_4_2"
+            android:onClick="jumpActivity"/>
+
+        <Button
+            android:id="@+id/class4.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="classes4.3"
+            android:tag="top.gtf35.iotgameproject.classes_4.class_4_3.Class_4_3"
+            android:onClick="jumpActivity"/>
+
+        <Button
+            android:id="@+id/class5.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="classes5.1"
+            android:tag="top.gtf35.iotgameproject.classes_5.class_5_1.Class_5_1"
+            android:onClick="jumpActivity"/>
+
+        <Button
+            android:id="@+id/class5.2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="classes5.2"
+            android:tag="top.gtf35.iotgameproject.classes_5.class_5_2.Class_5_2"
+            android:onClick="jumpActivity"/>
+
+        <Button
+            android:id="@+id/class5.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="classes5.3"
+            android:tag="top.gtf35.iotgameproject.classes_5.class_5_3.Class_5_3"
+            android:onClick="jumpActivity"/>
+
+        <Button
+            android:id="@+id/class6.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="classes6.1"
+            android:tag="top.gtf35.iotgameproject.classes_6.class_6_1.Class_6_1"
+            android:onClick="jumpActivity"/>
+
+        <Button
+            android:id="@+id/class6.2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="classes6.2"
+            android:tag="top.gtf35.iotgameproject.classes_6.class_6_2.Class_6_2"
+            android:onClick="jumpActivity"/>
+
+        <Button
+            android:id="@+id/class6.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="classes6.3"
+            android:tag="top.gtf35.iotgameproject.classes_6.class_6_3.Class_6_3"
+            android:onClick="jumpActivity"/>
+
+        <Button
+            android:id="@+id/class7.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="classes7.1"
+            android:tag="top.gtf35.iotgameproject.classes_7.class_7_1.Class_7_1"
+            android:onClick="jumpActivity"/>
+
+    </LinearLayout>
+
+</ScrollView>

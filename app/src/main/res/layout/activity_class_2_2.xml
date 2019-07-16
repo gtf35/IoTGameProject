@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".classes_2.class_2_2.Class_2_2">
+
+    <TextView
+        android:id="@+id/tv_fire"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:text="订单号：201508260528"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tv_smoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_fire"
+        android:layout_below="@id/tv_fire"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/white"
+        android:text="收货人：李四"/>
+
+    <TextView
+        android:id="@+id/tv_persion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_smoke"
+        android:layout_below="@id/tv_smoke"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/white"
+        android:text="联系电话：136********"/>
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_persion"
+        android:layout_below="@id/tv_persion"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/white"
+        android:text="收货地址：XX省XX市XX县XX街道"/>
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv4"
+        android:layout_below="@id/tv4"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/white"
+        android:text="总金额：114"/>
+
+    <TableLayout
+        android:id="@+id/tb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv5"
+        android:layout_below="@id/tv5"
+        android:layout_marginTop="8dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="50dp">
+
+        <TableRow
+            android:id="@+id/tr1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:textColor="@android:color/white"
+                android:text="商品名称"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:textColor="@android:color/white"
+                android:text="商品数量"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:textColor="@android:color/white"
+                android:text="商品单价"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:textColor="@android:color/white"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:textColor="@android:color/white"
+                android:text="伊利畅轻牛奶"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:textColor="@android:color/white"
+                android:text="50"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:textColor="@android:color/white"
+                android:text="2"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:textColor="@android:color/white"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <Spinner
+        style="@android:style/Theme.Holo.Light"
+        android:id="@+id/sp1"
+        android:layout_below="@id/tb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@id/tb1"/>
+
+    <Button
+        android:text="返回"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignRight="@id/tb1"
+        android:layout_below="@id/sp1"/>
+
+</RelativeLayout>

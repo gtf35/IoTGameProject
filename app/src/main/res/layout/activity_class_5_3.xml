@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/class_5_3_vegetable_night"
+    tools:context=".classes_5.class_5_3.Class_5_3">
+
+    <TextView
+        android:id="@+id/tv_statues_title"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="43dp"
+        android:text="逻辑状态："
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="啦啊啊啊啦呱呱呱呱"
+        android:id="@+id/tv_statues_context"
+        android:textSize="15dp"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/iv_fan"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="254dp"
+        android:layout_marginTop="183dp" />
+
+    <ImageView
+        android:id="@+id/iv_door"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="362dp"
+        android:layout_marginTop="195dp" />
+
+</RelativeLayout>

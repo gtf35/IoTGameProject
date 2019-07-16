@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/class_3_1_smartcity_bg"
+    tools:context=".classes_3.class_3_1.Class_3_1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_margin="30dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/class_3_1_smartcity_logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@android:color/white"
+                android:layout_marginTop="40dp"
+                android:hint="账号"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@android:color/white"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:layout_marginTop="20dp"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_marginTop="30dp"
+                android:text="登录"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/class_3_1_btn_page_hover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
