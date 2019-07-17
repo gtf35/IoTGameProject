@@ -46,6 +46,7 @@ public class FourInput {
         ZigBeeAnalogServiceAPI.getHum("humi", new OnHumResponse() {
             @Override
             public void onValue(double v) {
+
             }
 
             @Override

@@ -30,7 +30,7 @@ public class Class_6_1 extends AppCompatActivity {
         startFan();
         closeDoor();
         initListener();
-        mFourInput = new FourInput(1, 0, 5, mHandler);
+        mFourInput = new FourInput(7, 0, 5, mHandler);
         mFourInput.start();
     }
 

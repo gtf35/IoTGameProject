@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".classes_7.class_7_2.Class_7_2">
+    tools:context="com.example.bcodescanner.CaptureActivity">
 
     <SurfaceView
         android:id="@+id/surfaceview"
@@ -19,6 +19,13 @@
             android:id="@+id/viewfindview"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/exit_btn"
+            android:text="exit"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
     </RelativeLayout>
 
