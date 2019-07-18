@@ -30,8 +30,15 @@ import top.gtf35.iotgameproject.R;
 
 public class CaptureActivity extends Activity implements SurfaceHolder.Callback {
 
+    /*预览界面*/
+    /*此视图覆盖在相机预览的顶部，就是扫描的预览还有扫描动画*/
+    //https://github.com/zxing/zxing/blob/master/android/src/com/google/zxing/client/android/ViewfinderView.java
     private ViewfinderView mViewfinderView;
+    /*闲置倒计时，用于电池供电时在闲置时节能*/
+    //https://github.com/zxing/zxing/blob/master/android/src/com/google/zxing/client/android/InactivityTimer.java
     private InactivityTimer mInactivityTimer;
+    /*BarcodeFormat是个枚举类，用于描述已知的条码类型*/
+    //https://github.com/zxing/zxing/blob/master/core/src/main/java/com/google/zxing/BarcodeFormat.java
     private Vector<BarcodeFormat> mBarcodeFormats;
     private CaptureActivityHandler mCaptureActivityHandler;
     private String mCharacterSet;
