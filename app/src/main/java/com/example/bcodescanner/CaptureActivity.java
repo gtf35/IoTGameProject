@@ -28,6 +28,13 @@ import java.util.Vector;
 
 import top.gtf35.iotgameproject.R;
 
+/*
+* 此活动打开相机并在后台线程上进行实际扫描。
+* 它绘制取景器以帮助用户正确放置条形码，
+* 在图像处理过程中显示反馈，
+* 然后在扫描成功时覆盖结果。
+* */
+
 public class CaptureActivity extends Activity implements SurfaceHolder.Callback {
 
     /*预览界面*/
@@ -40,6 +47,8 @@ public class CaptureActivity extends Activity implements SurfaceHolder.Callback 
     /*BarcodeFormat是个枚举类，用于描述已知的条码类型*/
     //https://github.com/zxing/zxing/blob/master/core/src/main/java/com/google/zxing/BarcodeFormat.java
     private Vector<BarcodeFormat> mBarcodeFormats;
+    /*此类处理包含要捕获的状态机的所有消息传递*/
+    //https://github.com/zxing/zxing/blob/master/android/src/com/google/zxing/client/android/CaptureActivityHandler.java
     private CaptureActivityHandler mCaptureActivityHandler;
     private String mCharacterSet;
     private boolean mPlayBeep, mVibrate;
@@ -58,8 +67,11 @@ public class CaptureActivity extends Activity implements SurfaceHolder.Callback 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_class_7_2);
         initView();
+        /*
+        * CameraManager：此对象包装Camera服务对象，并期望成为唯一与之对话的对象。 该实现封装了拍摄预览大小图像所需的步骤，这些图像用于预览和解码。
+        * */
         CameraManager.init(getApplicationContext());
-        mInactivityTimer = new InactivityTimer(this);
+        mInactivityTimer = new InactivityTimer(this);//闲置倒计时
     }
 
     @Override
@@ -107,8 +119,12 @@ public class CaptureActivity extends Activity implements SurfaceHolder.Callback 
         CameraManager.get().closeDriver();
     }
 
+    /*
+    * 找到了有效的条形码，因此请说明成功并显示结果
+    * */
     private void handleDecode(Result result, Bitmap barcode){
         mInactivityTimer.onActivity();
+        /*beep或震动，并且我们有一张图片去绘制*/
         mPlayBeepSoundAndVibrate();
         String resultString = result.getText();
         if (TextUtils.isEmpty(resultString)){

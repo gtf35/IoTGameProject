@@ -228,6 +228,28 @@
             android:tag="top.gtf35.iotgameproject.classes_7.class_7_1.Class_7_1"
             android:onClick="jumpActivity"/>
 
+        <Button
+            android:id="@+id/class_comport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Com Port Test"
+            android:tag="top.gtf35.iotgameproject.com_port_test.ComPortTest"
+            android:onClick="jumpActivity"/>
+
+        <Button
+            android:id="@+id/class_capture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Bar code Scanner"
+            android:tag="com.example.bcodescanner.CaptureActivity"
+            android:onClick="jumpActivity"/>
+
     </LinearLayout>
 
 </ScrollView>
