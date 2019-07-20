@@ -6,6 +6,7 @@
 package com.newland.zigbeelibrary;
 
 import android.annotation.SuppressLint;
+import android.content.SharedPreferences;
 import android.util.Log;
 
 import com.newland.jni.Linuxc;
@@ -54,7 +55,8 @@ public class ZigBeeService extends Thread {
                     System.arraycopy(temp, 0, this.data, 0, lentemp);
                     while (true) {
                         if (lentemp < 27) {
-                            Log.w(getClass().getSimpleName(), "lentemp < 27 break  lentemp = " + lentemp);
+                            Log.e(getClass().getSimpleName(), "lentemp < 27 break  lentemp = " + lentemp);
+                            Log.e(TAG, "很遗憾收到数据小于27：\n" + ArrayUtils.arrayToString(this.data, 28));
                             break;
                         }
                         if (!checkData(this.data)) {
@@ -107,7 +109,7 @@ public class ZigBeeService extends Thread {
     private boolean checkData(byte[] data) {
         boolean result = data[0] == HEAD && data[2] == CMD0 && data[3] == CMD1 && data[6] == DTYPEL && data[7] == DTYPEH;
         System.out.println("sss result = " + result);
-        Log.w(TAG, "收到数据：\n" + ArrayUtils.arrayToString(data, 23));
+        Log.w(TAG, "收到数据：\n" + ArrayUtils.arrayToString(data, 8));
         Log.w(TAG, "校验数据有效性结果：" + result);
         return result;
     }

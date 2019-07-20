@@ -1,6 +1,7 @@
 package top.gtf35.iotgameproject.com_port_test;
 
 import android.annotation.SuppressLint;
+import android.content.SharedPreferences;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
@@ -45,5 +46,17 @@ public class ComPortTest extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         mFourInput.closePort();
+    }
+
+    private void save(){
+        SharedPreferences sharedPreferences = getSharedPreferences("seeting", 0);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putBoolean("ss", true);
+        editor.commit();
+    }
+
+    private void read(){
+        SharedPreferences sharedPreferences = getSharedPreferences("seeting", 0);
+        boolean ss = sharedPreferences.getBoolean("ss", false);
     }
 }

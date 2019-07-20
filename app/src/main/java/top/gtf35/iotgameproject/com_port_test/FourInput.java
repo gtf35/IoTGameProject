@@ -4,6 +4,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 
+import com.newland.jni.Linuxc;
 import com.newland.zigbeelibrary.ZigBeeAnalogServiceAPI;
 import com.newland.zigbeelibrary.ZigBeeService;
 import com.newland.zigbeelibrary.ZigbeeAnalogHelper;
@@ -21,7 +22,7 @@ public class FourInput {
 
     public FourInput(int com, int mode, int bandRate, Handler handler) {
         this.mHandler = handler;
-        ZigbeeAnalogHelper.com = ZigBeeAnalogServiceAPI.openPort(com, mode, bandRate);
+        ZigBeeAnalogServiceAPI.openPort(com, mode, bandRate);
         mFourInput_fd = ZigbeeAnalogHelper.com;
     }
 
@@ -35,6 +36,27 @@ public class FourInput {
         Log.w(getClass().getSimpleName(), "FourInput start call");
 
         zigBeeService.start();
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while (true){
+                    try {
+                        String send = "5#";
+                        Log.w("gtf35", "发送的字符：" + send);
+                        Linuxc.sendMsgUartHex(ZigbeeAnalogHelper.com, send, send.length());
+                        Thread.sleep(1000);
+                        send = "8#";
+                        Log.w("gtf35", "发送的字符：" + send);
+                        Linuxc.sendMsgUartHex(ZigbeeAnalogHelper.com, send, send.length());
+                        Thread.sleep(1000);
+                    } catch (Exception e){
+                        e.printStackTrace();
+                    }
+                }
+
+            }
+        }).start();
         ZigBeeAnalogServiceAPI.getTemperature("temp", new OnTemperatureResponse() {
             @Override
             public void onValue(double v) {
