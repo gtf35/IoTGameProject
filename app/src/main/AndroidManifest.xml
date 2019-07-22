@@ -16,10 +16,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".fire.FireActivity">
+        <activity android:name=".bitmap_learn.BitmapTest">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".com_port_test.ComPortTest"/>
+        <activity android:name=".fire.FireActivity"></activity>
+        <activity android:name=".com_port_test.ComPortTest" />
         <activity android:name="com.example.bcodescanner.CaptureActivity" />
         <activity android:name=".classes_7.class_7_1.Class_7_1" />
         <activity android:name=".classes_7.class_7_1.Class_7_1_Settings" />
@@ -43,14 +48,12 @@
         <activity android:name=".classes_2.class_2_3.Class_2_3" />
         <activity android:name=".classes_2.class_2_2.Class_2_2" />
         <activity android:name=".classes_2.class_2_1.Class_2_1" />
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 
